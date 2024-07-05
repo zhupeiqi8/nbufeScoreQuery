@@ -669,7 +669,7 @@ def fetch_grades(session, username, password):
                                          for col in row.find_all('td')])) for row in rows]
             print(tabulate(grades, headers="keys", tablefmt="pretty"))
         else:
-            return "无成绩"
+            print("无成绩")
 
 
 if __name__ == "__main__":
